@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import MagicMock, patch
-from langchain_nla_util.oauth import OAuthHandler
+from langchain.oauth import OAuthHandler
 
 class TestOAuthHandler(unittest.TestCase):
     def test_authorization_url(self):
