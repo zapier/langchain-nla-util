@@ -80,3 +80,16 @@ For more information on these concepts, please see our [full documentation](http
 As an open source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of a new feature, improved infra, or better documentation.
 
 For detailed information on how to contribute, see [here](CONTRIBUTING.md).
+
+## OAuth Support
+
+This library now includes OAuth support for Zapier's NLA on LangChain, enabling more secure and user-friendly integrations. To configure OAuth, you will need to provide the necessary credentials and endpoints.
+
+### Usage
+
+1. Import the `OAuthHandler` class from `langchain_nla_util.oauth`.
+2. Initialize the `OAuthHandler` with your credentials and endpoints.
+3. Use the `authorization_url` method to generate the authorization URL and redirect the user to it.
+4. After the user authorizes your application, use the `fetch_token` method to fetch the access token.
+5. Use the
+
